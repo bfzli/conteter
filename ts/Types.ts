@@ -1,1 +1,1 @@
-export type GlobalContenterTargets = "name" | "surname" | "email"
+export type GlobalContenterTargets = "name" | "surname" | "email" | "title" | "username" | "website";
