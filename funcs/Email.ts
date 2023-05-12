@@ -1,8 +1,5 @@
-import Emails from "../data/Emails.json";
+import { Emails } from "../data";
+import { RandomItemSelector } from "../utils";
 
-export const Email = () => {
-  const randomEmail = Emails[Math.floor(Math.random() * Emails.length)];
-  return randomEmail;
-};
-
+export const Email = ()=> RandomItemSelector(Emails);
 export default Email;

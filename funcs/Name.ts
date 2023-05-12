@@ -1,8 +1,5 @@
-import Names from "../data/Names.json";
+import { Names } from "../data";
+import { RandomItemSelector } from "../utils";
 
-export const Name = () => {
-  const randomName = Names[Math.floor(Math.random() * Names.length)];
-  return randomName;
-};
-
+export const Name = () => RandomItemSelector(Names);
 export default Name;

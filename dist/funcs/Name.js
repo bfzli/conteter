@@ -1,14 +1,9 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Name = void 0;
-const Names_json_1 = __importDefault(require("../data/Names.json"));
-const Name = () => {
-    const randomName = Names_json_1.default[Math.floor(Math.random() * Names_json_1.default.length)];
-    return randomName;
-};
+const data_1 = require("../data");
+const utils_1 = require("../utils");
+const Name = () => (0, utils_1.RandomItemSelector)(data_1.Names);
 exports.Name = Name;
 exports.default = exports.Name;
 //# sourceMappingURL=Name.js.map
